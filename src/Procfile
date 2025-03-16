@@ -1,3 +1,4 @@
-gunicorn src.appf:app
+web: gunicorn src.appf:app
+
 
 
