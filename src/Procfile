@@ -1,2 +1,3 @@
-web: gunicorn src.appf:app
+gunicorn src.appf:app
+
 
