@@ -14,7 +14,7 @@ st.set_page_config(layout="wide")
 load_dotenv()
 
 HUBSPOT_ACCESS_TOKEN=os.getenv("HUBSPOT_ACCESS_TOKEN")
-HUBSPOT_API_URL=os.getenv("HUBSPOT_API_URL")
+HUBSPOT_API_URL="https://api.hubapi.com/crm/v3/objects/contacts"
 #HUBSPOT_API_URL_LISTS=os.getenv("HUBSPOT_API_URL_LISTS")
 
 properties={"firstname","lastname","gender","date_of_birth","occupation","phone","email"}
