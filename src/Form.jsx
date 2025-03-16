@@ -24,7 +24,7 @@ const MicrositeForm=()=>{
         if (Object.keys(errors).length==0)
         {
             try {
-                const response = await axios.post("http://127.0.0.1:5000/submit", formvalues, {
+                const response = await axios.post("https://flask-backend-nizg.onrender.com/submit", formvalues, {
                     headers: {
                         "Content-Type": "application/json"
                     }
