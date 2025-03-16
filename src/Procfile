@@ -1,1 +1,2 @@
-web: python appf.py
+web: gunicorn appf:app
+
