@@ -27,7 +27,7 @@ HEADERS = {
 
 def fetch_data():
     params = {"properties": ",".join(properties),"limit": 100}
-    response_con = requests.get(HUBSPOT_API_URL_CONTACTS, headers=HEADERS, params=params)
+    response_con = requests.get(HUBSPOT_API_URL, headers=HEADERS, params=params)
 
     if response_con.status_code == 200:
         result = response_con.json()
