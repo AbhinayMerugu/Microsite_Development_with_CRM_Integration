@@ -73,6 +73,8 @@ if not df1.empty:
         st.write("Gender Distribution")
         gender_counts = df1["Gender"].value_counts()
         st.bar_chart(gender_counts,y_label="Count",x_label="Gender",height=450)
+
+        st.write("\n"*5)
         
         
         st.write("Gender Distribution by Occupation")
@@ -83,6 +85,8 @@ if not df1.empty:
         ax.set_ylabel("Count")
         ax.set_yticks(range(0,df1["Gender"].value_counts().max()+1,1))
         st.pyplot(fig)
+
+        st.write("\n"*5)
         
         st.write("Gender Distribution by Age")
         ans=df1.groupby("Gender")["Age"].mean()
@@ -93,6 +97,8 @@ if not df1.empty:
         occupation_counts = df1["Occupation"].value_counts()
         st.bar_chart(occupation_counts,y_label="Count",x_label="Occupation",height=450)
 
+        st.write("\n"*5)
+
         st.write("Occupation Distribution by Gender")
         fig,ax=plt.subplots(figsize=(5,4))
 
@@ -101,6 +107,9 @@ if not df1.empty:
         ax.set_ylabel("Count")
         ax.set_yticks(range(0,df1["Occupation"].value_counts().max()+1,1))
         st.pyplot(fig)
+
+
+        st.write("\n"*5)
 
         st.write("Occupation Distribution by Age")
         ans=df1.groupby("Occupation")["Age"].mean()
