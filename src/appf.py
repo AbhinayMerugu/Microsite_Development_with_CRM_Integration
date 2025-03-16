@@ -8,7 +8,7 @@ import os
 
 
 app=Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://form-microsite.onrender.com"], supports_credentials=True)
 
 load_dotenv()
 
