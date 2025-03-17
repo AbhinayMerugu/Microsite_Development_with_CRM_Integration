@@ -15,6 +15,11 @@ load_dotenv()
 HUBSPOT_ACCESS_TOKEN = os.getenv("HUBSPOT_ACCESS_TOKEN")
 HUBSPOT_API_URL=os.getenv("HUBSPOT_API_URL")
 
+
+@app.route("/")
+def home():
+    return "<h1>Flask API is Running</h1><p>This is a backend web service for the microsite.</p>"
+
 @app.route("/submit", methods=["POST"])
 def submit_form():
     try:
