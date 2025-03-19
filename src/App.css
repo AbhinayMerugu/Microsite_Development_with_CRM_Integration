@@ -8,7 +8,6 @@ body{
   width:500px;
   margin:auto;
   margin-top:20px;
-  justify-content:flex-start;
   background-color: rgb(16, 12, 12);
   margin-bottom:20px;
 }
@@ -64,7 +63,7 @@ select{
 input{
   display:block;
   font-size:12px;
-  border:1px;
+  border:1px solid black ;
   box-sizing:border-box;
   padding:8px;
   width:100%;
@@ -74,7 +73,7 @@ input{
 .gender-container {
   display: flex;
   align-items: center;
-  gap: -100px; 
+  gap: 10px; 
 }
 
 .gender-container input {
