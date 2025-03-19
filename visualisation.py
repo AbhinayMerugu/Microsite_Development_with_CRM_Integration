@@ -113,7 +113,7 @@ if not df1.empty:
 
         st.write("Occupation Distribution by Age")
         ans=df1.groupby("Occupation")["Age"].mean()
-        st.bar_chart(ans,y_label="Average Age",x_label="Gender",height=420)
+        st.bar_chart(ans,y_label="Average Age",x_label="Occupation",height=420)
 
     with col3:
         st.write("Age Distribution")
